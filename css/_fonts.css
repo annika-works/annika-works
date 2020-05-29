@@ -1,0 +1,21 @@
+/* @import url(//fonts.googleapis.com/css?family=Work+Sans:400); */
+  
+
+@font-face {
+    font-family: 'Uxum Regular';
+    src: 
+        url('../assets/fonts/Uxum-Regular.woff') format('woff'); 
+    }
+
+@font-face {
+    font-family: 'Uxum Light';
+    src: 
+        url('../assets/fonts/UxumLight.woff') format('woff'); 
+    }
+
+@font-face {
+    font-family: 'Pirelli';
+    src: 
+        url('../assets/fonts/pirelli-light.woff2') format('woff2'),
+        url('../assets/fonts/pirelli-light.woff') format('woff');
+    }
