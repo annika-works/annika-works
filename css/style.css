@@ -477,3 +477,32 @@ p.credits {
   border-radius: 50%;
   content: " ";
 }
+
+div.face {
+  position: relative;
+  display: inline-block;
+}
+
+div.face img.eye-white {
+  padding: 0 24px;
+  transform: translateY(-24px);
+}
+
+div.iris {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+} 
+
+div.iris div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  background-image: url('../assets/images/blue-iris-out.svg');
+  background-repeat: no-repeat;
+  
+  transform: translate(12%,-35%);
+}
