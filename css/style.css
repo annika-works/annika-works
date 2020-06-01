@@ -4,6 +4,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000;
+  width: 100%;
+  height: 100%;
 }
 
 main {
@@ -101,14 +103,14 @@ header nav a:hover {
   font-family: 'Uxum Light';
 }
 
-.list a:after {
+/* .list a:after {
   content: '\A';
   width:10px;
   height:10px;
   border-radius:50%;
   background: #b83b3b;
   display:inline-block;
-}
+} */
 
 .list a:last-child:after {
   content: '';
@@ -438,4 +440,40 @@ p.credits {
   .screenfont {
     display: none;
   }
+}
+
+.move-area{/*normally use body*/
+  padding: 0 3%;
+  display: inline-block;
+}
+
+
+.contain {
+  transform: translateY(-12px);
+}
+.contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin: 3px;
+  background: #CCC;
+}
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 19px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
 }
