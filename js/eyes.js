@@ -1,6 +1,9 @@
 
 
-const irisLeft = document.querySelector('div.iris-left')
+const irisOne = document.querySelector('div.iris-one')
+const irisTwo = document.querySelector('div.iris-two')
+const irisThree = document.querySelector('div.iris-three')
+const irisFour = document.querySelector('div.iris-four')
 
 let interval = null
 
@@ -10,8 +13,18 @@ const startInterval = function () {
     interval = setInterval(() => {
       const x = Math.random() * window.innerWidth
       const y = Math.random() * window.innerHeight
+      const z = Math.random() * window.innerWidth
+      const w = Math.random() * window.innerHeight
+      const u = Math.random() * window.innerWidth
+      const v = Math.random() * window.innerHeight
+      const m = Math.random() * window.innerWidth
+      const n = Math.random() * window.innerHeight
+
       
-      moveEye(irisLeft, x, y)
+      moveEye(irisOne, x, y)
+      moveEye(irisTwo, z, w)
+      moveEye(irisThree, u, v)
+      moveEye(irisFour, m, n)
     }, 3000)
   }
 
@@ -29,7 +42,7 @@ const moveEye = function(tag, mouseX, mouseY){
   const diff = Math.sqrt(diffX * diffX + diffY * diffY)
   
   // what is the capped radius
-  const radius = Math.min(12, diff)
+  const radius = Math.min(10, diff)
   
   // tan in math
   const angle = Math.atan2(diffY, diffX)
@@ -48,5 +61,8 @@ startInterval()
 
 document.addEventListener("mousemove", function(event){
     startInterval()
-    moveEye(irisLeft, event.pageX, event.pageY)
+    moveEye(irisOne, event.pageX, event.pageY)
+    moveEye(irisTwo, event.pageX, event.pageY)
+    moveEye(irisThree, event.pageX, event.pageY)
+    moveEye(irisFour, event.pageX, event.pageY)
 });

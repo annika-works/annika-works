@@ -500,9 +500,26 @@ div.iris div {
   left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 9px;
   background-image: url('../assets/images/blue-iris-out.svg');
   background-repeat: no-repeat;
   
   transform: translate(12%,-35%);
+}
+
+div.iris div.iris-brown {
+  background-image: url('../assets/images/brown-iris-out.svg');
+  width: 32px;
+  height: 32px;
+}
+
+div.iris div.iris-green {
+  background-image: url('../assets/images/green-iris-out.svg');
+  width: 32px;
+  height: 32px;
+}
+
+div.iris div.iris-grey {
+  background-image: url('../assets/images/grey-iris-out.svg');
+  width: 32px;
+  height: 32px;
 }
